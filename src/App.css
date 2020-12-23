@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -26,6 +27,35 @@
 
 .App-link {
   color: #61dafb;
+}
+.pdf{
+  background-color: rgb(190, 190, 188);
+  color: red;
+  font-size: 22px;
+  padding: 10px 15px; 
+  border: 1px solid red;
+  border-radius: 5px;
+  /* width: fit-content; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.center{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.wid{
+  
+}
+
+.icon-pdf{
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {
