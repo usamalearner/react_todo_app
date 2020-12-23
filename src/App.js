@@ -37,26 +37,30 @@ class App extends Component{
       todos:this.state.todos
     })
   }
-  editTodo=(index,val)=>{
+  editTodo=(index)=>{
     // var updatedval = prompt("enter val")
     // this.state.todos[index] = updatedval
    
-    this.state.todos[index].edit = true;
+   
+    let Todo = this.state.todos
+    Todo[index].edit = true;
      this.setState({
-      todos:this.state.todos
+      todos:Todo
     })
   }
   handleChange=(e,index)=>{
     // console.log(e.target.value,i)
-    this.state.todos[index].title = e.target.value
+    let Todo = this.state.todos
+   Todo[index].title = e.target.value
     this.setState({
-      todos:this.state.todos
+      todos:Todo
     })
   }
   update=(index)=>{
-    this.state.todos[index].edit = false;
+    let Todo = this.state.todos
+    Todo[index].edit = false;
     this.setState({
-      todos:this.state.todos
+      todos:Todo
     })
   }
   render(){
